@@ -17,14 +17,17 @@ void main()
     {
         printf("%d ", first);
     }
-    printf("%d %d ", first, second);
-
-    // we already print 2 elements so loop start from next that mean -3-
-    for (i = 3; i <= num; i++)
+    else
     {
-        fib = first + second;
-        printf("%d ", fib);
-        first = second;
-        second = fib;
+        printf("%d %d ", first, second);
+
+        // we already print 2 elements so loop start from next that mean -3-
+        for (i = 3; i <= num; i++)
+        {
+            fib = first + second;
+            printf("%d ", fib);
+            first = second;
+            second = fib;
+        }
     }
 }
